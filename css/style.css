@@ -1,0 +1,295 @@
+/* CSS file: style.css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+}
+
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(56, 75, 53, 0.1);
+}
+
+nav .logo img {
+    height: 40px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links li {
+    margin-left: 2em;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+nav .auth-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+nav .auth-links .signup {
+    background-color: #2c3033;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+/* Header Styles */
+header {
+    
+    background-color: #2A3342;
+    color: #fff;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+header .intro .badge {
+    background-color: #00ff3c;
+    color: #333;
+    padding: 0.5em 1em;
+    display: inline-block;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+header .cta {
+    margin: 2em 0;
+}
+
+header .cta input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1em;
+    font-size: 1em;
+}
+
+header .cta button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #00ff15;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+header small {
+    display: block;
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+/* Logo Cloud Styles */
+.logo-cloud {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #fff;
+}
+
+.logo-cloud p {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.logo-cloud .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-cloud .logos img {
+    margin: 0 1em;
+    height: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.logo-cloud .logos img:hover {
+    filter: none;
+}
+
+/* Features Section Styles */
+.features {
+    position: relative;
+    padding: 4em 2em;
+    background-color: #f4f4f4;
+    text-align: center;
+    overflow: hidden;
+}
+
+.features .wave {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('path/to/wave-image.png') repeat-x;
+    animation: wave-animation 10s linear infinite;
+    z-index: 1;
+}
+
+.features-title {
+    position: relative;
+    z-index: 2;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.features-description {
+    position: relative;
+    z-index: 2;
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+.feature-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2em;
+    position: relative;
+    z-index: 2;
+}
+
+.feature-item {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 4em);
+    min-width: 350px;
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item img {
+    height: 40px;
+    margin-bottom: 1em;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #00ff15;
+}
+
+.feature-item h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Wave Animation */
+@keyframes wave-animation {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+
+/* CTA Section Styles */
+.cta-section {
+    padding: 2em;
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.cta-content {
+    gap:8px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin:  auto;
+}
+
+.cta-content h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  
+}
+
+.cta-content p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-buttons {
+    display: flex;
+ margin-bottom: auto;
+
+    justify-content: center;
+    gap: 1em;
+}
+
+.cta-buttons .cta-btn {
+    padding: 5px 40px;
+    border-radius: 4px;
+    /* font-size: 1em; */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-buttons .primary-btn {
+    background-color: #22c55e;
+    color: #fff;
+}
+
+.cta-buttons .secondary-btn {
+    background-color: #fff;
+    color: #1e293b;
+}
